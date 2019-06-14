@@ -12122,11 +12122,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\ArkhamAsylum2\\ArkhamAsylum.Web\\ArkhamAsylum.Web.csproj",
+      "projectUniqueName": "C:\\Dev\\ArkhamAsylum\\ArkhamAsylum.Web\\ArkhamAsylum.Web.csproj",
       "projectName": "ArkhamAsylum.Web",
-      "projectPath": "C:\\Dev\\ArkhamAsylum2\\ArkhamAsylum.Web\\ArkhamAsylum.Web.csproj",
+      "projectPath": "C:\\Dev\\ArkhamAsylum\\ArkhamAsylum.Web\\ArkhamAsylum.Web.csproj",
       "packagesPath": "C:\\Users\\A4ALUMNO\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\ArkhamAsylum2\\ArkhamAsylum.Web\\obj\\",
+      "outputPath": "C:\\Dev\\ArkhamAsylum\\ArkhamAsylum.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12151,11 +12151,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Dev\\ArkhamAsylum2\\ArkhamAsylum.DAL\\ArkhamAsylum.Lib.DAL.csproj": {
-              "projectPath": "C:\\Dev\\ArkhamAsylum2\\ArkhamAsylum.DAL\\ArkhamAsylum.Lib.DAL.csproj"
+            "C:\\Dev\\ArkhamAsylum\\ArkhamAsylum.DAL\\ArkhamAsylum.Lib.DAL.csproj": {
+              "projectPath": "C:\\Dev\\ArkhamAsylum\\ArkhamAsylum.DAL\\ArkhamAsylum.Lib.DAL.csproj"
             },
-            "C:\\Dev\\ArkhamAsylum2\\ArkhamAsylum.Lib\\ArkhamAsylum.Lib.csproj": {
-              "projectPath": "C:\\Dev\\ArkhamAsylum2\\ArkhamAsylum.Lib\\ArkhamAsylum.Lib.csproj"
+            "C:\\Dev\\ArkhamAsylum\\ArkhamAsylum.Lib\\ArkhamAsylum.Lib.csproj": {
+              "projectPath": "C:\\Dev\\ArkhamAsylum\\ArkhamAsylum.Lib\\ArkhamAsylum.Lib.csproj"
             }
           }
         }

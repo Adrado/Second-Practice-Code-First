@@ -225,11 +225,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Dev\\ArkhamAsylum2\\ArkhamAsylum.Lib\\ArkhamAsylum.Lib.csproj",
+      "projectUniqueName": "C:\\Dev\\ArkhamAsylum\\ArkhamAsylum.Lib\\ArkhamAsylum.Lib.csproj",
       "projectName": "ArkhamAsylum.Lib",
-      "projectPath": "C:\\Dev\\ArkhamAsylum2\\ArkhamAsylum.Lib\\ArkhamAsylum.Lib.csproj",
+      "projectPath": "C:\\Dev\\ArkhamAsylum\\ArkhamAsylum.Lib\\ArkhamAsylum.Lib.csproj",
       "packagesPath": "C:\\Users\\A4ALUMNO\\.nuget\\packages\\",
-      "outputPath": "C:\\Dev\\ArkhamAsylum2\\ArkhamAsylum.Lib\\obj\\",
+      "outputPath": "C:\\Dev\\ArkhamAsylum\\ArkhamAsylum.Lib\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
