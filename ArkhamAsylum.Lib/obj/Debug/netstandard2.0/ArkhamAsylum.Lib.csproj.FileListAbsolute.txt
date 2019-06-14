@@ -1,0 +1,17 @@
+C:\Users\a4alumno\source\repos\ArkhamAsylum\ArkhamAsylum.Lib\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.csproj.CoreCompileInputs.cache
+C:\Users\a4alumno\source\repos\ArkhamAsylum\ArkhamAsylum.Lib\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.AssemblyInfoInputs.cache
+C:\Users\a4alumno\source\repos\ArkhamAsylum\ArkhamAsylum.Lib\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.AssemblyInfo.cs
+C:\Users\a4alumno\source\repos\ArkhamAsylum\ArkhamAsylum.Lib\bin\Debug\netstandard2.0\ArkhamAsylum.Lib.deps.json
+C:\Users\a4alumno\source\repos\ArkhamAsylum\ArkhamAsylum.Lib\bin\Debug\netstandard2.0\ArkhamAsylum.Lib.dll
+C:\Users\a4alumno\source\repos\ArkhamAsylum\ArkhamAsylum.Lib\bin\Debug\netstandard2.0\ArkhamAsylum.Lib.pdb
+C:\Users\a4alumno\source\repos\ArkhamAsylum\ArkhamAsylum.Lib\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.dll
+C:\Users\a4alumno\source\repos\ArkhamAsylum\ArkhamAsylum.Lib\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.pdb
+C:\Dev\ArkhamAsylum2\ArkhamAsylum.Lib\bin\Debug\netstandard2.0\ArkhamAsylum.Lib.deps.json
+C:\Dev\ArkhamAsylum2\ArkhamAsylum.Lib\bin\Debug\netstandard2.0\ArkhamAsylum.Lib.dll
+C:\Dev\ArkhamAsylum2\ArkhamAsylum.Lib\bin\Debug\netstandard2.0\ArkhamAsylum.Lib.pdb
+C:\Dev\ArkhamAsylum2\ArkhamAsylum.Lib\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.csproj.CoreCompileInputs.cache
+C:\Dev\ArkhamAsylum2\ArkhamAsylum.Lib\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.AssemblyInfoInputs.cache
+C:\Dev\ArkhamAsylum2\ArkhamAsylum.Lib\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.AssemblyInfo.cs
+C:\Dev\ArkhamAsylum2\ArkhamAsylum.Lib\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.dll
+C:\Dev\ArkhamAsylum2\ArkhamAsylum.Lib\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.pdb
+C:\Dev\ArkhamAsylum2\ArkhamAsylum.Lib\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.csprojAssemblyReference.cache
