@@ -22,4 +22,8 @@
     <ProjectReference Include="..\ArkhamAsylum.Lib\ArkhamAsylum.Lib.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Scripts\Views\NewFolder\" />
+  </ItemGroup>
+
 </Project>

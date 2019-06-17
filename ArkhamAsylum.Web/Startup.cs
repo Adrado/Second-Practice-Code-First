@@ -46,6 +46,8 @@ namespace ArkhamAsylum.Web
             }
 
             app.UseMvc();
+            app.UseStaticFiles();
+            app.UseDefaultFiles();
         }
     }
 }
