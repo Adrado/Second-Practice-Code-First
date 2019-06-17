@@ -27,7 +27,7 @@ namespace ArkhamAsylum.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var connectionString = @"Data Source=E409W10O13\sqlexpress;Initial Catalog=ArkhamAsylum;Integrated Security=True";
+            var connectionString = @"Data Source=E409W10O13\sqlexpress;Initial Catalog=ArkhamAsylum2;Integrated Security=True";
 
             // Register DbContext class
             services.AddDbContext<ArkhamAsylumDbContext>(options =>

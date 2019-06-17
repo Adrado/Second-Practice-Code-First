@@ -24,6 +24,8 @@ namespace ArkhamAsylum.Web.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("Name");
+
                     b.HasKey("Id");
 
                     b.ToTable("Areas");
@@ -64,9 +66,40 @@ namespace ArkhamAsylum.Web.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("Code");
+
+                    b.Property<Guid>("DoctorId");
+
+                    b.Property<Guid>("RecordId");
+
                     b.HasKey("Id");
 
-                    b.ToTable("Diagnosiss");
+                    b.HasIndex("DoctorId");
+
+                    b.HasIndex("RecordId")
+                        .IsUnique();
+
+                    b.ToTable("Diagnoses");
+                });
+
+            modelBuilder.Entity("ArkhamAsylum.Lib.Models.Doctor", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<Guid>("AreaId");
+
+                    b.Property<string>("FirstSurname");
+
+                    b.Property<string>("Name");
+
+                    b.Property<string>("SecondSutname");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AreaId");
+
+                    b.ToTable("Doctor");
                 });
 
             modelBuilder.Entity("ArkhamAsylum.Lib.Models.Floor", b =>
@@ -90,7 +123,17 @@ namespace ArkhamAsylum.Web.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<Guid>("AreaId");
+
+                    b.Property<string>("FirstSurname");
+
+                    b.Property<string>("Name");
+
+                    b.Property<string>("SecondSutname");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("AreaId");
 
                     b.ToTable("Nurses");
                 });
@@ -100,7 +143,17 @@ namespace ArkhamAsylum.Web.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("Code");
+
+                    b.Property<Guid>("NurseId");
+
+                    b.Property<Guid>("RoomId");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("NurseId");
+
+                    b.HasIndex("RoomId");
 
                     b.ToTable("NurseRoomAssignations");
                 });
@@ -109,6 +162,12 @@ namespace ArkhamAsylum.Web.Migrations
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
+
+                    b.Property<string>("FirstSurname");
+
+                    b.Property<string>("Name");
+
+                    b.Property<string>("SecondSutname");
 
                     b.HasKey("Id");
 
@@ -120,7 +179,19 @@ namespace ArkhamAsylum.Web.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<Guid>("BedId");
+
+                    b.Property<string>("Code");
+
+                    b.Property<Guid>("DiagnosisId");
+
+                    b.Property<Guid>("PatientId");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("BedId");
+
+                    b.HasIndex("PatientId");
 
                     b.ToTable("Records");
                 });
@@ -130,11 +201,15 @@ namespace ArkhamAsylum.Web.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<Guid>("AreaId");
+
                     b.Property<Guid>("FloorId");
 
                     b.Property<int>("Number");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AreaId");
 
                     b.HasIndex("FloorId");
 
@@ -149,6 +224,27 @@ namespace ArkhamAsylum.Web.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
+            modelBuilder.Entity("ArkhamAsylum.Lib.Models.Diagnosis", b =>
+                {
+                    b.HasOne("ArkhamAsylum.Lib.Models.Doctor", "Doctor")
+                        .WithMany("Diagnoses")
+                        .HasForeignKey("DoctorId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("ArkhamAsylum.Lib.Models.Record", "Record")
+                        .WithOne("Diagnosis")
+                        .HasForeignKey("ArkhamAsylum.Lib.Models.Diagnosis", "RecordId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("ArkhamAsylum.Lib.Models.Doctor", b =>
+                {
+                    b.HasOne("ArkhamAsylum.Lib.Models.Area", "Area")
+                        .WithMany("Doctors")
+                        .HasForeignKey("AreaId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
             modelBuilder.Entity("ArkhamAsylum.Lib.Models.Floor", b =>
                 {
                     b.HasOne("ArkhamAsylum.Lib.Models.Building", "Building")
@@ -157,8 +253,47 @@ namespace ArkhamAsylum.Web.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
+            modelBuilder.Entity("ArkhamAsylum.Lib.Models.Nurse", b =>
+                {
+                    b.HasOne("ArkhamAsylum.Lib.Models.Area", "Area")
+                        .WithMany("Nurses")
+                        .HasForeignKey("AreaId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("ArkhamAsylum.Lib.Models.NurseRoomAssignation", b =>
+                {
+                    b.HasOne("ArkhamAsylum.Lib.Models.Nurse", "Nurse")
+                        .WithMany("NurseRoomAssignations")
+                        .HasForeignKey("NurseId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("ArkhamAsylum.Lib.Models.Room", "Rooms")
+                        .WithMany("NurseRoomAssignations")
+                        .HasForeignKey("RoomId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("ArkhamAsylum.Lib.Models.Record", b =>
+                {
+                    b.HasOne("ArkhamAsylum.Lib.Models.Bed", "Bed")
+                        .WithMany()
+                        .HasForeignKey("BedId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("ArkhamAsylum.Lib.Models.Patient", "Patient")
+                        .WithMany("Records")
+                        .HasForeignKey("PatientId")
+                        .OnDelete(DeleteBehavior.Cascade);
+                });
+
             modelBuilder.Entity("ArkhamAsylum.Lib.Models.Room", b =>
                 {
+                    b.HasOne("ArkhamAsylum.Lib.Models.Area", "Area")
+                        .WithMany()
+                        .HasForeignKey("AreaId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
                     b.HasOne("ArkhamAsylum.Lib.Models.Floor", "Floor")
                         .WithMany("Rooms")
                         .HasForeignKey("FloorId")

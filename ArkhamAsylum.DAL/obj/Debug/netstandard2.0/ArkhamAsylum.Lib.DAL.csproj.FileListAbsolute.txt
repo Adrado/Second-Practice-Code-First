@@ -22,3 +22,15 @@ C:\Dev\ArkhamAsylum2\ArkhamAsylum.DAL\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.
 C:\Dev\ArkhamAsylum2\ArkhamAsylum.DAL\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.DAL.csproj.CopyComplete
 C:\Dev\ArkhamAsylum2\ArkhamAsylum.DAL\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.DAL.dll
 C:\Dev\ArkhamAsylum2\ArkhamAsylum.DAL\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.DAL.pdb
+C:\Dev\ArkhamAsylum\ArkhamAsylum.DAL\bin\Debug\netstandard2.0\ArkhamAsylum.Lib.DAL.deps.json
+C:\Dev\ArkhamAsylum\ArkhamAsylum.DAL\bin\Debug\netstandard2.0\ArkhamAsylum.Lib.DAL.dll
+C:\Dev\ArkhamAsylum\ArkhamAsylum.DAL\bin\Debug\netstandard2.0\ArkhamAsylum.Lib.DAL.pdb
+C:\Dev\ArkhamAsylum\ArkhamAsylum.DAL\bin\Debug\netstandard2.0\ArkhamAsylum.Lib.dll
+C:\Dev\ArkhamAsylum\ArkhamAsylum.DAL\bin\Debug\netstandard2.0\ArkhamAsylum.Lib.pdb
+C:\Dev\ArkhamAsylum\ArkhamAsylum.DAL\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.DAL.csprojAssemblyReference.cache
+C:\Dev\ArkhamAsylum\ArkhamAsylum.DAL\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.DAL.csproj.CoreCompileInputs.cache
+C:\Dev\ArkhamAsylum\ArkhamAsylum.DAL\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.DAL.AssemblyInfoInputs.cache
+C:\Dev\ArkhamAsylum\ArkhamAsylum.DAL\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.DAL.AssemblyInfo.cs
+C:\Dev\ArkhamAsylum\ArkhamAsylum.DAL\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.DAL.csproj.CopyComplete
+C:\Dev\ArkhamAsylum\ArkhamAsylum.DAL\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.DAL.dll
+C:\Dev\ArkhamAsylum\ArkhamAsylum.DAL\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.DAL.pdb
