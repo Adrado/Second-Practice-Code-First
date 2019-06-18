@@ -2,9 +2,9 @@
 
 app.config(function ($routeProvider, $locationProvider)
 {
-    $routeProvider.when('/users',
+    $routeProvider.when('/areas',
     {
-        template: '<users></users>'
+        template: '<areas></areas>'
         });
 
     $routeProvider.when('/employees',
@@ -12,9 +12,9 @@ app.config(function ($routeProvider, $locationProvider)
             template: '<employees></employees>'
         });
 
-    $routeProvider.when('/clients',
+    $routeProvider.when('/buildings',
         {
-            template: '<clients></clients>'
+            template: '<buildings></buildings>'
         });
 
     $routeProvider.when('/products',

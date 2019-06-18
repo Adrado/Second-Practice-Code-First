@@ -23,7 +23,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\Scripts\Views\NewFolder\" />
+    <Folder Include="wwwroot\Scripts\Views\Beds\" />
+    <Folder Include="wwwroot\Scripts\Views\Diagnoses\" />
+    <Folder Include="wwwroot\Scripts\Views\Doctors\" />
+    <Folder Include="wwwroot\Scripts\Views\Floors\" />
+    <Folder Include="wwwroot\Scripts\Views\Rooms\" />
+    <Folder Include="wwwroot\Scripts\Views\Records\" />
+    <Folder Include="wwwroot\Scripts\Views\Patients\" />
+    <Folder Include="wwwroot\Scripts\Views\Nurses\" />
   </ItemGroup>
 
 </Project>
