@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ArkhamAsylum.Web.Migrations
 {
-    public partial class SegundoIntento : Migration
+    public partial class Intento3 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -47,7 +47,7 @@ namespace ArkhamAsylum.Web.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Doctor",
+                name: "Doctors",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
@@ -58,9 +58,9 @@ namespace ArkhamAsylum.Web.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Doctor", x => x.Id);
+                    table.PrimaryKey("PK_Doctors", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Doctor_Areas_AreaId",
+                        name: "FK_Doctors_Areas_AreaId",
                         column: x => x.AreaId,
                         principalTable: "Areas",
                         principalColumn: "Id",
@@ -169,13 +169,13 @@ namespace ArkhamAsylum.Web.Migrations
                         column: x => x.NurseId,
                         principalTable: "Nurses",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_NurseRoomAssignations_Rooms_RoomId",
                         column: x => x.RoomId,
                         principalTable: "Rooms",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -218,17 +218,17 @@ namespace ArkhamAsylum.Web.Migrations
                 {
                     table.PrimaryKey("PK_Diagnoses", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Diagnoses_Doctor_DoctorId",
+                        name: "FK_Diagnoses_Doctors_DoctorId",
                         column: x => x.DoctorId,
-                        principalTable: "Doctor",
+                        principalTable: "Doctors",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Diagnoses_Records_RecordId",
                         column: x => x.RecordId,
                         principalTable: "Records",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
@@ -248,8 +248,8 @@ namespace ArkhamAsylum.Web.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_Doctor_AreaId",
-                table: "Doctor",
+                name: "IX_Doctors_AreaId",
+                table: "Doctors",
                 column: "AreaId");
 
             migrationBuilder.CreateIndex(
@@ -302,7 +302,7 @@ namespace ArkhamAsylum.Web.Migrations
                 name: "NurseRoomAssignations");
 
             migrationBuilder.DropTable(
-                name: "Doctor");
+                name: "Doctors");
 
             migrationBuilder.DropTable(
                 name: "Records");

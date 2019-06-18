@@ -99,7 +99,7 @@ namespace ArkhamAsylum.Web.Migrations
 
                     b.HasIndex("AreaId");
 
-                    b.ToTable("Doctor");
+                    b.ToTable("Doctors");
                 });
 
             modelBuilder.Entity("ArkhamAsylum.Lib.Models.Floor", b =>

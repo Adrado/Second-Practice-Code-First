@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ArkhamAsylum.Web.Migrations
 {
     [DbContext(typeof(ArkhamAsylumDbContext))]
-    [Migration("20190617134111_SegundoIntento")]
-    partial class SegundoIntento
+    [Migration("20190618152337_Intento3")]
+    partial class Intento3
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -101,7 +101,7 @@ namespace ArkhamAsylum.Web.Migrations
 
                     b.HasIndex("AreaId");
 
-                    b.ToTable("Doctor");
+                    b.ToTable("Doctors");
                 });
 
             modelBuilder.Entity("ArkhamAsylum.Lib.Models.Floor", b =>
