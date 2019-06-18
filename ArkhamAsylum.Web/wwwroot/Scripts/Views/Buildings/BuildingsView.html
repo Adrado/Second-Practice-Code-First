@@ -6,7 +6,8 @@
         <div class="main-agileinfo">
             <div class="agileits-top">
                 <form name="MyForm">
-                    <input class="text" type="text" placeholder="Name" ng-model="vm.Name" required="">
+                    <input class="text" type="text" placeholder="Code" ng-model="vm.Code" required="">
+                    <input class="text" type="text" placeholder="Address" ng-model="vm.Address" required="">
                     <input type="submit" value="Add" id="AddButton" class="submit" ng-click="vm.CheckFormAdd(MyForm.$valid)" ng-show="!vm.IsEditing">
                     <input type="submit" value="Save" id="SaveButton" ng-click="vm.CheckFormSave(MyForm.$valid)" ng-show="vm.IsEditing">
                 </form>

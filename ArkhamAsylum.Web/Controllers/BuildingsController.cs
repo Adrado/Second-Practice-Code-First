@@ -76,6 +76,10 @@ namespace ArkhamAsylum.Web.Controllers
         [HttpPost]
         public async Task<ActionResult<Building>> PostBuilding(Building building)
         {
+            if (building.Id == default(Guid))
+            {
+                building.Id = Guid.NewGuid();
+            }
             _context.Buildings.Add(building);
             await _context.SaveChangesAsync();
 

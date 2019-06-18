@@ -19,7 +19,8 @@
                 data: 'vm.Buildings',
                 appScopeProvider: this,
                 columnDefs: [
-                    { name: 'Name', field: 'Name' },
+                    { name: 'Code', field: 'Code' },
+                    { name: 'Address', field: 'Address' },
                     { name: '', field: 'Id', cellTemplate: '<input type="button" value="Edit" ng-click="grid.appScope.Select(row.entity)">' },
                     { name: ' ', field: 'Id', cellTemplate: '<input type="button" value="Remove" ng-click="grid.appScope.RemoveBuilding(row.entity)">' }
                 ]
@@ -57,10 +58,7 @@
     AddNewBuilding()
     {
         let building = new Building();
-        building.Name = this.Name;
-        building.Surname = this.Surname;
-        building.Email = this.Email;
-        building.Password = this.Password;
+        building.Code = this.Code;
         building.Address = this.Address;
         this.SetData(building);
     }
@@ -85,20 +83,15 @@
 
     Clean()
     {
-        this.Name = "";
-        this.Surname = "";
-        this.Email = "";
-        this.Password = "";
+        this.Code = "";
         this.Address = "";
+ 
     }
 
     Select(building)
     {
         this.SelectedBuilding = building;
-        this.Name = building.Name;
-        this.Surname = building.Surname;
-        this.Email = building.Email;
-        this.Password = building.Password;
+        this.Code = building.Code;
         this.Address = building.Address;
         this.IsEditing = true;
 
@@ -114,10 +107,7 @@
 
     SaveSelectedBuilding()
     {
-        this.SelectedBuilding.Name = this.Name;
-        this.SelectedBuilding.Surname = this.Surname;
-        this.SelectedBuilding.Email = this.Email;
-        this.SelectedBuilding.Password = this.Password;
+        this.SelectedBuilding.Code = this.Code;
         this.SelectedBuilding.Address = this.Address;
 
         this.SaveEditBuilding();
