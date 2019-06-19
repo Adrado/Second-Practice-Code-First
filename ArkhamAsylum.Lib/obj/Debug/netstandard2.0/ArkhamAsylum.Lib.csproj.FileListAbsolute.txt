@@ -23,3 +23,4 @@ C:\Dev\ArkhamAsylum\ArkhamAsylum.Lib\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.A
 C:\Dev\ArkhamAsylum\ArkhamAsylum.Lib\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.AssemblyInfo.cs
 C:\Dev\ArkhamAsylum\ArkhamAsylum.Lib\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.dll
 C:\Dev\ArkhamAsylum\ArkhamAsylum.Lib\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.pdb
+C:\Dev\ArkhamAsylum\ArkhamAsylum.Lib\obj\Debug\netstandard2.0\ArkhamAsylum.Lib.csprojAssemblyReference.cache

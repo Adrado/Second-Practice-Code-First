@@ -28,6 +28,7 @@ namespace ArkhamAsylum.Lib.DAL
         public DbSet<Bed> Beds { get; set; }
         public DbSet<Building> Buildings { get; set; }
         public DbSet<Diagnosis> Diagnoses { get; set; }
+        public DbSet<Doctor> Doctors { get; set; }
         public DbSet<Floor> Floors { get; set; }
         public DbSet<Nurse> Nurses { get; set; }
         public DbSet<NurseRoomAssignation> NurseRoomAssignations { get; set; }
